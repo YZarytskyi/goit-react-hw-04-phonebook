@@ -14,7 +14,7 @@ const ContactsForm = ({ contacts, setNewContact }: ContactsFormProps) => {
 
   const onChangeInput = (e: React.FormEvent<HTMLInputElement>) => {
     const { name, value } = e.target as HTMLInputElement;
-    if (name === contactName) {
+    if (name === 'name') {
       setContactName(value);
       return;
     }
